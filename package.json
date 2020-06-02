@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-first-steps",
+  "version": "1.0.0",
+  "description": "First steps to master Bootsrtrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HENDEL SAMY",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
