@@ -69,6 +69,9 @@
         <div class="row row-content">
             <div class="col-12 col-sm-6">
                 <h2>Our History</h2>
+                <a href="#" data-trigger="hover" data-toggle="popover" title="The header title"
+                    data-content="This is a text ...">Hey, hope
+                    you're doing wll</a>
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence
                     in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it
                     enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star
@@ -329,6 +332,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle = "popover"]').popover();
+        })
+    </script>
 </body>
 
 </html>
