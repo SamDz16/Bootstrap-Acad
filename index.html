@@ -98,16 +98,150 @@
                     <img src="img/logo.png" alt="Restorant logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#reserve_table" class="btn btn-warning d-block" 7 data-toggle="tooltip" data-html="true"
-                        title="Or Call Us at <br><strong>+855 12345678</strong>" data-placement="bottom">
+
+                    <button class="btn btn-warning text-bold" data-toggle="modal" data-target="#reserveTable">
                         Reserve Table
-                    </a>
+                    </button>
+
+                    <div class="modal fade" id="reserveTable">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-dark">Reserve a Table</h3>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form class="text-dark">
+
+                                        <div class="forn-group row mb-3">
+                                            <div class="col-12 col-sm-4">
+                                                <label for="nbr_guests">Number of Guests</label>
+                                            </div>
+                                            <div class="col-12 col-sm-8">
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 1
+                                                </span>
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 2
+                                                </span>
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 3
+                                                </span>
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 4
+                                                </span>
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 5
+                                                </span>
+                                                <span class="mr-2">
+                                                    <input type="radio" name="1"> 6
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row mb-3">
+                                            <div class="col-12 col-sm-4">
+                                                <label for="section">Section</label>
+                                            </div>
+                                            <div class="col-12 col-sm-8">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-success" role="radio"
+                                                        checked>Non-Smoking</button>
+                                                    <button class="btn btn-danger" role="radio">Smoking</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row mb-5">
+                                            <div class="col-12 col-sm-4">
+                                                <label for="date_time">Date and Time</label>
+                                            </div>
+                                            <div class="col-sm-8 form-row">
+                                                <div class="col-sm-5">
+                                                    <input type="date" class="form-control" placeholder="Date">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <input type="time" class="form-control" placeholder="Time">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row offset-sm-4">
+                                            <button class="btn btn-secondary mr-1" data-dissmis="modal">Cancel</button>
+                                            <button class="btn btn-primary">Reserve</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthapiza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza <span class="badge badge-danger">HOT</span><span
+                                        class="badge badge-pill badge-secondary ml-2">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                    Italian
+                                    pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,
+                                    Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/buffet.png" alt="uthapiza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Weekend Grand Buffet
+                                    <span class="badge badge-danger">NEW</span>
+                                </h2>
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                                    different salads, six enticing appetizers, six main entrees and five choicest
+                                    desserts. Free
+                                    flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthapiza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza <span class="badge badge-danger">HOT</span><span
+                                        class="badge badge-pill badge-secondary ml-2">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                    Italian
+                                    pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,
+                                    Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="row row-content align-items-center">
 
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -116,13 +250,13 @@
 
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="img/uthappizza.png" alt="uthappizza" class="f-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span
-                                class="badge badge-pill badge-secondary ml-2">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
-                            pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur
-                            chillies and Buffalo Paneer.</p>
+                    <img src="img/alberto.png" alt="uthappizza" class="f-flex mr-3 img-thumbnail align-self-center">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
+                            experience having worked closely with whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div>
             </div>
@@ -138,7 +272,7 @@
                 <div class="media">
                     <img src="img/buffet.png" alt="buffet" class="f-flex ml-3 img-thimbnail align-self-center order-2">
 
-                    <div class="media-body order-1">
+                    <div class="carousel-caption d-none d-md-block">
                         <h2>Weekend Grand Buffet
                             <span class="badge badge-danger">NEW</span>
                         </h2>
@@ -167,62 +301,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-8 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-warning text-white">
-                        <h3>Reserv a Table</h3>
-                    </div>
-                    <div class="card-body">
-                        <form id="reserve_table">
-                            <div class="forn-group row">
-                                <div class="col-12 col-sm-4">
-                                    <label for="nbr_guests">Number of Guests</label>
-                                </div>
-                                <div class="col-12 col-sm-8">
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 1
-                                    </span>
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 2
-                                    </span>
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 3
-                                    </span>
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 4
-                                    </span>
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 5
-                                    </span>
-                                    <span class="mr-2">
-                                        <input type="radio" name="1"> 6
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="form-group row mt-2">
-                                <div class="col-12 col-sm-4">
-                                    <label for="date_time">Date and Time</label>
-                                </div>
-                                <div class="col-12 col-sm-8 row justify-content-between">
-                                    <input type="date" class="form-control col-12 col-sm-5" placeholder="Date">
-                                    <input type="time" class="form-control col-12 col-sm-5" placeholder="Time">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="offset-sm-4 mt-1">
-                                    <button class="btn btn-primary">Reserve</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
@@ -279,9 +357,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('[data-toggle = "tooltip"]').tooltip();
-        })
+
     </script>
 </body>
 
