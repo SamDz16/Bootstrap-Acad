@@ -214,14 +214,15 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthapiza">
+                            <img class="d-block img-fluid" src="img/alberto.png" alt="alberto">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2>Uthappizza <span class="badge badge-danger">HOT</span><span
-                                        class="badge badge-pill badge-secondary ml-2">$4.99</span></h2>
-                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
-                                    Italian
-                                    pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,
-                                    Guntur chillies and Buffalo Paneer.</p>
+                                <h2>Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                    International
+                                    experience having worked closely with whos-who in the culinary world, he specializes
+                                    in
+                                    creating mouthwatering Indo-Italian fusion experiences. </p>
                             </div>
                         </div>
 
@@ -239,6 +240,16 @@
                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -250,13 +261,14 @@
 
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="img/alberto.png" alt="uthappizza" class="f-flex mr-3 img-thumbnail align-self-center">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
-                            experience having worked closely with whos-who in the culinary world, he specializes in
-                            creating mouthwatering Indo-Italian fusion experiences. </p>
+                    <img src="img/uthappizza.png" alt="uthappizza" class="f-flex mr-3 img-thumbnail align-self-center">
+                    <div class="d-none d-md-block">
+                        <h2>Uthappizza <span class="badge badge-danger">HOT</span><span
+                                class="badge badge-pill badge-secondary ml-2">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian
+                            pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,
+                            Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -272,7 +284,7 @@
                 <div class="media">
                     <img src="img/buffet.png" alt="buffet" class="f-flex ml-3 img-thimbnail align-self-center order-2">
 
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="d-none d-md-block">
                         <h2>Weekend Grand Buffet
                             <span class="badge badge-danger">NEW</span>
                         </h2>
@@ -357,7 +369,16 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
+        $(document).ready(function () {
+            $('#myCarousel').carousel({ interval: 2000 });
 
+            $('#carousel-pause').click(function () {
+                $('#myCarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function () {
+                $('#myCarousel').carousel('cycle');
+            });
+        });
     </script>
 </body>
 
