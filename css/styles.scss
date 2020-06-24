@@ -78,3 +78,20 @@ body{
   bottom: 0px;
   z-index: 1;
 }
+
+// Adding some Scss styles to style the reserve table modal
+.modal{
+  .modal-header{
+    background-color: $background-dark;
+    color: floralwhite;
+    
+    .modal-title,
+    button {
+      color: floralwhite;
+    }
+  }
+
+  .modal-body{
+    background-color: $background-pale;
+  }
+}
